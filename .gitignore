@@ -1,0 +1,136 @@
+src/runs/*
+weights/*
+.DS_Store
+data/*
+models/*
+whale-detection-challenge/*
+Elephant_Archive/*
+elephant_dataset/Test_full/
+elephant_dataset/Data/*
+elephant_dataset/New_Data/*
+elephant_dataset/Processed_data/*
+elephant_dataset/Processed_data_new/*
+elephant_dataset/Features_Labels/*
+elephant_dataset/Test/*
+elephant_dataset/Train/*
+elephant_dataset/Processed_data_MFCC/*
+elephant_dataset/Test_Atlas/*
+elephant_dataset/Json_Data/*
+elephant_dataset/eleph_dataset/Noise_Stats/*
+elephant_dataset/eleph_dataset/call.npy
+elephant_dataset/eleph_dataset/empty.npy
+elephant_dataset/Train_New/*
+elephant_dataset/Test_New/*
+elephant_dataset/Train_Old_1/*
+elephant_dataset/Test_Old_1/*
+elephant_dataset/Train_Old_2/*
+elephant_dataset/Test_Old_2/*
+Predictions/*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.project
+.pydevproject
+dist/
