@@ -19,6 +19,7 @@ setup(
                         'keras>=2.3.1',
                         'tensorflow>=2.2.0',
                         'tqdm>=4.46.0',
+                        #'google-colab>=1.0.0', 
                         ],
 
     #dependency_links = ['https://github.com/DmitryUlyanov/Multicore-TSNE/tarball/master#egg=package-1.0']
