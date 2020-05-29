@@ -19,6 +19,7 @@ setup(
                         'keras>=2.3.1',
                         'tensorflow>=2.2.0',
                         'tqdm>=4.46.0',
+                        'protobuf>=3.12.2',
                         #'google-colab>=1.0.0', 
                         ],
 
