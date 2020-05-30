@@ -69,7 +69,7 @@ At the moment, the Hugging Face library seems to be the most widely accepted and
 **Note**: as of July 2019, the pytorch library called "pytorch-pretrained-bert pytorch-nlp" has been updated and renamed as "pytorch-transformers." Though the old name still works, there is a short summary [here](https://github.com/huggingface/pytorch-transformers#Migrating-from-pytorch-pretrained-bert-to-pytorch-transformers) about migrating to the new library. (This mostly involves a few name changes.)
 """
 
-#*****!pip install pytorch-pretrained-bert pytorch-nlp
+!pip install pytorch-pretrained-bert pytorch-nlp
 
 # Commented out IPython magic to ensure Python compatibility.
 import torch
@@ -569,11 +569,11 @@ from sklearn.metrics import classification_report
 
 results = confusion_matrix(flat_true_labels, flat_predictions) 
   
-print('Confusion Matrix :')
+print 'Confusion Matrix :'
 print(results) 
-print('Accuracy Score :',accuracy_score(flat_true_labels, flat_predictions))
-print('Report : ')
-print(classification_report(flat_true_labels, flat_predictions))
+print 'Accuracy Score :',accuracy_score(flat_true_labels, flat_predictions) 
+print 'Report : '
+print classification_report(flat_true_labels, flat_predictions)
 
 """## Conclusion
 
