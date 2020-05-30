@@ -29,6 +29,7 @@ setup(
                         #'pandas>=1.0.3',
                         'pandas>=0.24.2',
                         'matplotlib>=3.2.1',
+                        'portpicker>=1.3.1',
                         #'google-colab>=1.0.0', 
                         ],
 

@@ -16,6 +16,7 @@
 
 
 jupyter serverextension enable --py jupyter_http_over_ws
+export PYTHONPATH=$(pwd)/src/bert_training/
 
 # Start the server:
 jupyter notebook \
