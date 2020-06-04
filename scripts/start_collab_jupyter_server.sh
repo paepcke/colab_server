@@ -22,4 +22,6 @@ export PYTHONPATH=$(pwd)/src/bert_training/
 jupyter notebook \
   --NotebookApp.allow_origin='https://colab.research.google.com' \
   --port=8888 \
-  --NotebookApp.port_retries=0
+  --NotebookApp.port_retries=0 \
+  > colab_server.log 2>&1
+
