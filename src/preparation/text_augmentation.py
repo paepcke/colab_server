@@ -42,7 +42,12 @@ class TextAugmenter(object):
     #-------------------
     
     def fit_to_sequence_len(self, train_df):
-        token_seqs = []
+        # Add a col to the passed-in df: 'tokens'.
+        # Create list the height of train_df:
+        token_col = ['']*len(train_df)
+        train_df['tokens'] = token_col
+        
+        new_rows = []
         nl_pat = re.compile(r'\n')
         for (_indx, row) in train_df.iterrows():
             # Remove \n chars;
@@ -53,7 +58,8 @@ class TextAugmenter(object):
             # Short enough to just keep?
             # The -2 allows for the [CLS] and [SEP] tokens:
             if len(tokenized_txt) <= self.sequence_len - 2:
-                token_seqs.append(['[CLS]'] + tokenized_txt + ['[SEP]'])
+                row['tokens'] = ['[CLS]'] + tokenized_txt + ['[SEP]']
+                new_rows.append(row)
                 continue
 
             # Go through the too-long tokenized txt, and cut into pieces
@@ -62,8 +68,13 @@ class TextAugmenter(object):
                 sent_fragment = ['[CLS]'] + \
                                 tokenized_txt[pos:pos+self.sequence_len-2]  + \
                                 ['[SEP]']
-                token_seqs.append(sent_fragment)
-        return token_seqs
+                # Make a copy of the row, and fill in the token:
+                new_row = row.copy()
+                new_row['tokens'] = sent_fragment
+                # Add to the train_df:
+                new_rows.append(new_row)
+        new_rows_df = pd.DataFrame(new_rows, columns=train_df.columns)
+        return new_rows_df
 
     #------------------------------------
     # augment_text 
