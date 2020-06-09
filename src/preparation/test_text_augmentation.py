@@ -9,8 +9,8 @@ import numpy as np
 import pandas as pd
 from preparation.text_augmentation import TextAugmenter
 
-TEST_ALL = True
-#TEST_ALL = False
+#TEST_ALL = True
+TEST_ALL = False
 
 class TestTextAugmentation(unittest.TestCase):
 
@@ -94,7 +94,7 @@ class TestTextAugmentation(unittest.TestCase):
     # test_padded_ids 
     #-------------------
     
-    @unittest.skipIf(not TEST_ALL, 'Temporarily skip this test.')
+    #****@unittest.skipIf(not TEST_ALL, 'Temporarily skip this test.')
     def test_padded_ids(self):
         padded_ids = self.augmenter.padded_ids(self.corr_tokens)
         np.allclose(padded_ids, self.corr_ids)

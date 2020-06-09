@@ -30,8 +30,12 @@ setup(
                         'pandas>=0.24.2',
                         'matplotlib>=3.2.1',
                         'portpicker>=1.3.1',
+                        'transformers>=2.11.0',
                         #'google-colab>=1.0.0',
+                        'seaborn>=0.10.1',
                         ],
+
+                        #pytorch-nlp
 
     #dependency_links = ['https://github.com/DmitryUlyanov/Multicore-TSNE/tarball/master#egg=package-1.0']
     # Unit tests; they are initiated via 'python setup.py test'
